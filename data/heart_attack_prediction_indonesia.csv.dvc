@@ -1,0 +1,5 @@
+outs:
+- md5: f36c7f02a8743421a418122833f1957b
+  size: 20749628
+  hash: md5
+  path: heart_attack_prediction_indonesia.csv
