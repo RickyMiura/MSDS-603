@@ -3,3 +3,5 @@
 /pipeline.pkl
 /processed_train_data.csv
 /processed_test_data.csv
+/heart_attack_prediction_indonesia.csv
+/processed_heart_attack_prediction.csv

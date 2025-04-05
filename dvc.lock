@@ -1,30 +1,22 @@
 schema: '2.0'
 stages:
   prepare:
-    cmd: python src/create_features.py
+    cmd: python src/preprocessing.py
     deps:
-    - path: data/adult.data
+    - path: data/heart_attack_prediction_indonesia.csv
       hash: md5
-      md5: 5d7c39d7b8804f071cdd1f2a7c460872
-      size: 3974305
-    - path: data/adult.test
+      md5: f36c7f02a8743421a418122833f1957b
+      size: 20749628
+    - path: src/preprocessing.py
       hash: md5
-      md5: 366c746021dc50ad9d933d2817612fc9
-      size: 2003132
-    - path: src/create_features.py
-      hash: md5
-      md5: b93aea27ba45f8b24bdd52928f1f2b99
-      size: 2564
+      md5: 078ed47b4b5538bf4b173e8facdf9ef6
+      size: 1151
     outs:
     - path: data/pipeline.pkl
       hash: md5
-      md5: 21a7924831e4b77841a92fe6fabd3a2c
-      size: 6072
-    - path: data/processed_test_data.csv
+      md5: 568f99ad5f2759e917086d6c88e8b62d
+      size: 3428
+    - path: data/processed_heart_attack_prediction.csv
       hash: md5
-      md5: a59c8daac38fe1ca84dda2b458ee762a
-      size: 5409602
-    - path: data/processed_train_data.csv
-      hash: md5
-      md5: adf63b6ce20f7ee74f63d5dabb325226
-      size: 10829967
+      md5: 3cc0abdd4219664cb6b5105d06228395
+      size: 70549292
